@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<script src="app.js">
+</script>
+</head>
+
+<body onload="firstfocus();">
+<form id="theForm" name="theForm" method="post" action="record.php" onSubmit="javaScript:return validateform(theForm);">
+  <p>Name : 
+    <input name="cname" type="text" id="cname" />
+  </p>
+  Gender :<label>
+        <input type="radio" name="gender" value="M" />
+        Male</label>
+		<input type="radio" name="gender" value="F" />
+        Female</label></td>
+  <p>Community : 
+    
+    <select name="comm" >
+      <option value="0">Select</option>
+      <option value="01">UR</option>
+      <option value="02">SC</option>
+      <option value="03">ST</option>
+      <option value="04">OBC</option>
+    </select>
+  </p>
+  <p>
+    <input name="education" type="checkbox" value="g" id="graduate" />
+  Graduate</p>
+  <p><input name="education" type="checkbox" value="p" id="post graduate" /> 
+  Post Graduate</p>
+  <p><input name="education" type="checkbox" value="Y" id="secondary" />
+  Secondary
+  </p>
+  <p>
+   <input type="reset" value="Reset">
+    <input type="submit" name="submit" id="submit" value="Submit" />
+  </p>
+  </p>
+</form>
+</body>
+</html>
